@@ -68,7 +68,6 @@
 
 **需要專業工程服務？** 請聯繫我們：
 
-*   **電子郵件：** every.push.colin@gmail.com
 *   **網站：** [各申機械設計工作室](https://sites.google.com/view/each-application/homepage)
 
 ---
