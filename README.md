@@ -1,77 +1,55 @@
-# 各申機械設計工作室 - 安全閥計算器 (單頁 Web App)
+# Safety Valve Calculator / 安全閥計算器
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+**快速、簡潔的安全閥尺寸與流量估算工具（僅供參考）**
 
-## 💡 專案簡介
+This project provides an easy-to-use tool for quick estimation of safety valve flow rates and sizes. It is intended for engineers, procurement teams, and manufacturers to quickly get preliminary values for project discussions and quotations.
 
-由 **各申機械設計工作室** 匠心打造的「安全閥計算器」是一個輕量級的單頁網頁應用程式 (Single-Page Web App)。此工具旨在作為工程師和技術人員在日常工作中進行快速、初步流體參數估算與單位轉換的**輔助工具**。我們透過此專案展示我們對工程原理的理解與前端應用開發能力。
-
-## ✨ 主要功能
-
-*   **多流體類型選擇：** 支援氣體（理想氣體近似）、液體（不可壓縮）及蒸氣（概估）。
-*   **靈活的流量類型輸入：** 可選擇輸入體積流率或質量流率。
-*   **廣泛的單位轉換：**
-    *   **體積流率：** m³/h, L/min, Nm³/h (標準), SCFM (標準英制)。
-    *   **質量流率：** kg/h, kg/s, lb/hr。
-    *   **壓力：** bar, kPa, Pa, MPa, psia。
-    *   **溫度：** °C, K, °F。
-*   **理想氣體容積⇄質量流率換算：** 考量壓力、溫度及分子量。
-*   **簡易結果匯出：**
-    *   一鍵複製計算結果到剪貼簿。
-    *   下載簡易報告 (TXT 格式)。
-
-## 🚀 立即體驗
-
-點擊以下連結，即可在瀏覽器中直接使用：
-
-👉 [**立即體驗 安全閥計算器 (GitHub Pages Demo)**](https://roscoe-tw.github.io/safety-valve-calculator/index.html)
-
-## ⚠️ 重要免責聲明
-
-此安全閥計算器是一個**快速估算與教學參考工具**，基於簡化的工程模型（如理想氣體近似）進行計算。
-
-**它不應作為任何正式工程設計、設備認證、法規簽核或商業決策的最終依據。** 蒸氣與高壓氣體的計算可能與實際情況有顯著偏差。
-
-**嚴格的工程計算、設備認證與法規報告，請務必委託專業工程師或機構執行。各申機械設計工作室提供專業且嚴謹的工程設備認證與設計服務，確保您的專案符合所有相關法規與標準。**
-
-## 🌐 開源理念與 各申機械設計工作室
-
-各申機械設計工作室堅信知識共享與技術透明的價值。我們將此計算器專案以 GNU 通用公共授權條款 (GPLv3) 發布，旨在：
-
-*   **展示專業：** 透過實際程式碼展現我們在流體力學與應用程式開發領域的深厚知識與實踐能力。
-*   **建立信任：** 以開源的形式呈現，提升我們在專業社群中的信譽與透明度。
-*   **回饋社群：** 促進工程知識的傳播，鼓勵技術交流與共同進步。
-*   **引導合作：** 歡迎廣大工程師與開發者檢視、使用本工具，並期待有機會與您在更深入的工程挑戰上合作。
-
-## 🛠️ 技術棧
-
-*   **前端：** HTML5, CSS3, JavaScript (Vanilla JS)
-*   **開發環境：** Emacs Org Mode (Literate Programming)
-
-## 🤝 貢獻
-
-我們歡迎任何形式的貢獻！如果您發現 Bug、有功能建議，或想提交程式碼改進，請隨時：
-
-1.  提交一個 [Issue](https://github.com/[你的GitHub用戶名]/[你的專案名稱]/issues) 報告 Bug 或提出建議。
-2.  Fork 本專案，並提交 Pull Request。
-
-## 關於 各申機械設計工作室
-
-**各申機械設計工作室** 是一家專注於**工程設備認證、設計審核與客製化工程解決方案**的專業服務機構。我們致力於為客戶提供符合國際標準與法規的嚴謹工程分析，確保設備的安全、可靠與高效運行。
-
-*   **我們的服務包括：**
-    *   壓力容器、管道系統的設計審核與認證
-    *   安全閥選型與驗證
-    *   熱交換器、泵浦等設備的性能評估
-    *   客製化工程計算工具開發
-    *   技術諮詢與培訓
-
-**需要專業工程服務？** 請聯繫我們：
-
-*   **網站：** [各申機械設計工作室](https://sites.google.com/view/each-application/homepage)
+本專案提供一個方便的線上工具，用於快速估算安全閥（safety valve）之流量與尺寸。目標是幫助工程師、採購與廠商在專案早期快速取得初步數值，便於溝通與報價。
 
 ---
 
-## 📜 許可證
+## 功能 / Features
 
-本專案依照 [GNU 通用公共授權條款 v3.0](https://www.gnu.org/licenses/gpl-3.0.html) 發布。
+- **快速估算 / Quick estimation**：依常見工況輸入壓力、溫度與介質，即可得到流量估算。
+- **易於使用 / Easy to use**：單頁 HTML/JS 應用，可直接在瀏覽器操作，無需安裝。
+- **方便分享 / Shareable**：計算結果可複製或截圖，方便與客戶或同事溝通。
+
+### 線上示範 / Online Demo
+
+[立即開啟線上版 / Open Online Version](https://roscoe-tw.github.io/safety-valve-calculator/index.html)
+
+---
+
+## 使用者注意（重要） / Important Notice
+
+為避免誤用與法律風險，請注意：
+
+**Disclaimer:**
+
+1. 本工具僅供初步估算與溝通之用，並非正式設計或合規性判定工具。
+   This tool is for preliminary estimation and discussion only. It is not a certified design or compliance tool.
+2. 未經訓練之使用或將本工具結果直接用於製造／驗證，可能造成安全或法律風險。最終設計與簽核應由具資格之設計工程師或合格單位負責並簽署。
+   Do not use this tool as a substitute for professional engineering judgment. Final design and approvals must be carried out by qualified engineers or authorized personnel.
+3. 本專案不對任何基於本工具使用而導致的直接或間接損失負責。使用者需自行負責確認結果之正確性與適用性。
+   The project author is not responsible for any direct or indirect damage resulting from use of this tool. Users are responsible for verifying the results.
+
+---
+
+## 想要專業支援？ / Professional Support
+
+如果您需要：
+- 專業的安全閥選型與完整計算報告
+- 可簽署之設計文件或第三方檢驗協調
+
+歡迎透過 GitHub Issues 或專案頁面聯絡我，我們可以討論報價與服務範圍（商業合約將另行簽署）。
+
+For professional support, including certified calculations or design documentation, please contact via GitHub Issues or project page to discuss service options and quotes.
+
+---
+
+## 授權 / License
+
+GPL-3.0 License。歡迎檢視原始碼、回報問題或提出功能需求。
+
+GPL-3.0 License. You are welcome to view the source code, report issues, or suggest features.
+
