@@ -24,7 +24,7 @@
 
 點擊以下連結，即可在瀏覽器中直接使用：
 
-👉 [**立即體驗 安全閥計算器 (GitHub Pages Demo)**](https://roacoe-tw.github.io/safety-valve-calculator/index.html)
+👉 [**立即體驗 安全閥計算器 (GitHub Pages Demo)**](https://roscoe-tw.github.io/safety-valve-calculator/index.html)
 
 ## ⚠️ 重要免責聲明
 
