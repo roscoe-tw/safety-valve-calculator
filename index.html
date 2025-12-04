@@ -180,7 +180,7 @@
         case 'pa': return p;
         case 'mpa': return p * 1e6;
         case 'psia': return (p - 14.6959) * 6894.757; // approx: psia to Pa (note: psia includes atm; this is simplistic)
-        default: return p * 1e5;
+        default: return p;
       }
     }
     
